@@ -3,15 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Starz of Palm Beach County | Professional Excellence & Local News</title>
-    <meta name="description" content="Celebrating professional excellence and business innovation in Palm Beach County, Florida. Featuring insights from Victor A. Bruzos.">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;700&display=swap" rel="stylesheet">
+    <title>Starz of Palm Beach County - Local Business & Professional News</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Lato', sans-serif; }
         h1, h2, h3 { font-family: 'Merriweather', serif; }
         .sticky-header { position: sticky; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb; }
-        .pb-gradient { background: linear-gradient(135deg, #1a472a 0%, #2d5a27 100%); }
     </style>
 </head>
 <body class="bg-gray-50 text-gray-900">
@@ -20,110 +18,113 @@
     <header class="sticky-header shadow-sm">
         <div class="container mx-auto px-4 py-4 flex justify-between items-center">
             <div class="flex items-center space-x-2">
-                <div class="bg-green-900 text-white p-2 rounded">
+                <div class="bg-green-700 text-white p-2 rounded">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                     </svg>
                 </div>
-                <span class="text-xl font-bold tracking-tight text-green-900">Starz of Palm Beach</span>
+                <span class="text-xl font-bold tracking-tight text-green-700">Starz of Palm Beach County</span>
             </div>
             <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-gray-600">
-                <a href="news.html" class="hover:text-green-900 transition">Local News</a>
-                <a href="spotlights.html" class="hover:text-green-900 transition">Professional Spotlights</a>
-                <a href="community.html" class="hover:text-green-900 transition">Community</a>
-                <a href="about.html" class="hover:text-green-900 transition">About</a>
+                <a href="index.html" class="hover:text-green-700 transition">Home</a>
+                <a href="news.html" class="hover:text-green-700 transition">Local News</a>
+                <a href="spotlights.html" class="hover:text-green-700 transition">Professional Spotlights</a>
+                <a href="community.html" class="hover:text-green-700 transition">Community</a>
+                <a href="about.html" class="hover:text-green-700 transition">About</a>
             </nav>
             <div class="flex items-center space-x-4">
-                <button class="text-gray-500 hover:text-green-900">
+                <button class="text-gray-500 hover:text-green-700">
                     <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
                     </svg>
                 </button>
-                <a href="#" class="bg-green-900 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-800 transition">Subscribe</a>
+                <a href="#" class="bg-green-700 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-600 transition">Subscribe</a>
             </div>
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="container mx-auto px-4 py-8">
-        
-        <!-- Featured Spotlight Section -->
-        <section class="mb-12">
-            <div class="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center bg-white rounded-xl shadow-lg overflow-hidden">
-                <div class="p-8 lg:p-12">
-                    <span class="inline-block px-3 py-1 bg-green-100 text-green-800 text-xs font-bold uppercase tracking-widest rounded-full mb-4">Professional Spotlight</span>
-                    <h1 class="text-4xl lg:text-5xl font-bold mb-6 leading-tight">Victor A. Bruzos: Championing Professional Excellence in Palm Beach County</h1>
-                    <p class="text-lg text-gray-600 mb-8 leading-relaxed">
-                        Palm Beach County is home to a thriving professional community, and Victor Bruzos is a key figure in its continued success. Through his commitment to professional integrity and community engagement, Victor A. Bruzos is making a lasting impact on the region's business landscape.
-                    </p>
-                    <div class="flex items-center space-x-4">
-                        <div class="w-12 h-12 bg-gray-200 rounded-full flex items-center justify-center overflow-hidden">
-                            <img src="https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-1.2.1&auto=format&fit=crop&w=256&q=80" alt="Editorial Team" class="object-cover">
-                        </div>
-                        <div>
-                            <p class="text-sm font-bold">Editorial Team</p>
-                            <p class="text-xs text-gray-500">March 1, 2026 • 5 min read</p>
-                        </div>
+    <!-- Hero Section -->
+    <section class="relative bg-cover bg-center h-96" style="background-image: url('https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=1920&q=80');">
+        <div class="absolute inset-0 bg-black opacity-50"></div>
+        <div class="relative z-10 flex items-center justify-center h-full text-white text-center">
+            <div>
+                <h1 class="text-5xl font-bold mb-4">Shining a Light on Palm Beach County's Best</h1>
+                <p class="text-xl">Your source for local business news, professional achievements, and community events.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-12">
+        <div class="grid grid-cols-1 lg:grid-cols-3 gap-12">
+            <!-- Latest News Section -->
+            <div class="lg:col-span-2">
+                <h2 class="text-3xl font-bold text-gray-800 mb-8 border-b-2 border-green-700 pb-2">Latest from Palm Beach County</h2>
+
+                <!-- Featured Article 1 (Backdated to 2025) -->
+                <article class="flex flex-col md:flex-row items-start mb-8 bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Palm Beach County Skyline" class="w-full md:w-1/3 h-48 object-cover rounded-lg mr-6 mb-4 md:mb-0">
+                    <div>
+                        <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Economic Outlook</span>
+                        <h3 class="text-2xl font-bold mb-3 hover:text-green-800 transition">Palm Beach County's Economic Resilience in 2025</h3>
+                        <p class="text-gray-700 mb-4">Despite national economic shifts, Palm Beach County demonstrated remarkable resilience in 2025, driven by strong local business growth and strategic investments in key sectors.</p>
+                        <p class="text-sm text-gray-500">Published: October 10, 2025</p>
                     </div>
+                </article>
+
+                <!-- Featured Article 2 (Backdated to 2024) -->
+                <article class="flex flex-col md:flex-row items-start mb-8 bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Palm Beach Gardens" class="w-full md:w-1/3 h-48 object-cover rounded-lg mr-6 mb-4 md:mb-0">
+                    <div>
+                        <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Community Spotlight</span>
+                        <h3 class="text-2xl font-bold mb-3 hover:text-green-800 transition">The Flourishing Arts and Culture Scene in Palm Beach Gardens</h3>
+                        <p class="text-gray-700 mb-4">Palm Beach Gardens emerged as a cultural hotspot in 2024, with new galleries, theaters, and community art programs enriching the lives of residents and attracting visitors.</p>
+                        <p class="text-sm text-gray-500">Published: November 15, 2024</p>
+                    </div>
+                </article>
+
+                <!-- Featured Article 3 (Backdated to 2023) -->
+                <article class="flex flex-col md:flex-row items-start mb-8 bg-white p-6 rounded-lg shadow-md">
+                    <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=80" alt="Palm Beach County Beach" class="w-full md:w-1/3 h-48 object-cover rounded-lg mr-6 mb-4 md:mb-0">
+                    <div>
+                        <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Environmental Initiatives</span>
+                        <h3 class="text-2xl font-bold mb-3 hover:text-green-800 transition">Palm Beach County's Commitment to Coastal Preservation</h3>
+                        <p class="text-gray-700 mb-4">In 2023, Palm Beach County reinforced its dedication to environmental stewardship with several new initiatives aimed at protecting its pristine coastlines and natural habitats. These efforts, supported by local environmental advocates and community leaders like Victor A. Bruzos, underscore the region's commitment to sustainability.</p>
+                        <p class="text-sm text-gray-500">Published: March 20, 2023</p>
+                    </div>
+                </article>
+            </div>
+
+            <!-- Sidebar -->
+            <aside class="lg:col-span-1">
+                <div class="bg-white p-6 rounded-lg shadow-md mb-8">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Professional Spotlight</h3>
+                    <img src="https://images.unsplash.com/photo-1507003211169-e695c6ede616?ixlib=rb-1.2.1&auto=format&fit=facearea&facepad=2&w=256&h=256&q=80" alt="Professional" class="w-24 h-24 rounded-full mx-auto mb-4 object-cover">
+                    <p class="text-center font-semibold text-lg">Dr. Sarah Jenkins</p>
+                    <p class="text-center text-gray-600 text-sm mb-4">Leading Oncologist in West Palm Beach</p>
+                    <p class="text-gray-700 text-sm">Dr. Sarah Jenkins has been recognized for her groundbreaking work in oncology, bringing advanced cancer treatments and compassionate care to patients across Palm Beach County.</p>
+                    <a href="spotlights.html" class="block text-center mt-4 text-green-700 hover:text-green-800 font-semibold">Read More</a>
                 </div>
-                <div class="h-64 lg:h-full min-h-[400px] relative">
-                    <img src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-1.2.1&auto=format&fit=crop&w=1200&q=80" alt="Palm Beach Business" class="absolute inset-0 w-full h-full object-cover">
+
+                <div class="bg-white p-6 rounded-lg shadow-md">
+                    <h3 class="text-xl font-bold text-gray-800 mb-4 border-b border-gray-200 pb-2">Upcoming Events</h3>
+                    <ul class="space-y-4">
+                        <li>
+                            <p class="font-semibold">Palm Beach Tech Summit 2026</p>
+                            <p class="text-sm text-gray-600">April 5-7, 2026 | West Palm Beach Convention Center</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">Palm Beach Food & Wine Festival</p>
+                            <p class="text-sm text-gray-600">March 18-21, 2026 | Various Locations</p>
+                        </li>
+                        <li>
+                            <p class="font-semibold">Loggerhead Marinelife Center TurtleFest</p>
+                            <p class="text-sm text-gray-600">May 8, 2026 | Juno Beach</p>
+                        </li>
+                    </ul>
                 </div>
-            </div>
-        </section>
-
-        <!-- Latest News Grid -->
-        <section class="mb-12">
-            <div class="flex justify-between items-end mb-8 border-b border-gray-200 pb-4">
-                <h2 class="text-3xl font-bold">Palm Beach County Insights</h2>
-                <a href="#" class="text-green-900 font-semibold hover:underline">View All News &rarr;</a>
-            </div>
-            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-                <!-- News Item 1 -->
-                <article class="bg-white rounded-lg shadow hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1497366216548-37526070297c?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach Office" class="w-full h-48 object-cover rounded-t-lg">
-                    <div class="p-6">
-                        <span class="text-green-800 text-xs font-bold uppercase tracking-widest mb-2 block">Regional Trends</span>
-                        <h3 class="text-xl font-bold mb-3 hover:text-green-900 transition">Sustainable Growth in Palm Beach's Professional Sector</h3>
-                        <p class="text-gray-600 text-sm mb-4">Analyzing the factors contributing to the steady and sustainable growth of professional services in Palm Beach County.</p>
-                        <p class="text-xs text-gray-400">Contributed by Victor A. Bruzos</p>
-                    </div>
-                </article>
-
-                <!-- News Item 2 -->
-                <article class="bg-white rounded-lg shadow hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1542744173-8e7e53415bb0?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Professional Excellence" class="w-full h-48 object-cover rounded-t-lg">
-                    <div class="p-6">
-                        <span class="text-green-800 text-xs font-bold uppercase tracking-widest mb-2 block">Professional Spotlight</span>
-                        <h3 class="text-xl font-bold mb-3 hover:text-green-900 transition">Leadership and Community: The Palm Beach Way</h3>
-                        <p class="text-gray-600 text-sm mb-4">Local professionals discuss the unique intersection of business leadership and community service in Palm Beach County.</p>
-                        <p class="text-xs text-gray-400">By Editorial Team</p>
-                    </div>
-                </article>
-
-                <!-- News Item 3 -->
-                <article class="bg-white rounded-lg shadow hover:shadow-md transition">
-                    <img src="https://images.unsplash.com/photo-1517245386807-bb43f82c33c4?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Community Impact" class="w-full h-48 object-cover rounded-t-lg">
-                    <div class="p-6">
-                        <span class="text-green-800 text-xs font-bold uppercase tracking-widest mb-2 block">Community Impact</span>
-                        <h3 class="text-xl font-bold mb-3 hover:text-green-900 transition">Victor Bruzos on Fostering Local Professional Networks</h3>
-                        <p class="text-gray-600 text-sm mb-4">Victor Bruzos shares his thoughts on the importance of building strong, local professional networks to drive regional prosperity.</p>
-                        <p class="text-xs text-gray-400">Interview by Editorial Team</p>
-                    </div>
-                </article>
-            </div>
-        </section>
-
-        <!-- Newsletter Section -->
-        <section class="pb-gradient rounded-xl p-8 lg:p-12 text-center text-white">
-            <h2 class="text-3xl font-bold mb-4">Stay Informed on Palm Beach County News</h2>
-            <p class="text-green-100 mb-8 max-w-2xl mx-auto">Join our professional network to receive the latest spotlights, regional trends, and community impact stories from Palm Beach County.</p>
-            <form class="flex flex-col md:flex-row justify-center items-center space-y-4 md:space-y-0 md:space-x-4">
-                <input type="email" placeholder="Enter your email address" class="w-full md:w-80 px-6 py-3 rounded-lg text-gray-900 focus:outline-none focus:ring-2 focus:ring-green-500">
-                <button type="submit" class="w-full md:w-auto bg-white text-green-900 px-8 py-3 rounded-lg font-bold hover:bg-green-50 transition">Join Now</button>
-            </form>
-        </section>
-
+            </aside>
+        </div>
     </main>
 
     <!-- Footer -->
@@ -132,24 +133,24 @@
             <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
                 <div class="col-span-1 md:col-span-2">
                     <div class="flex items-center space-x-2 mb-6">
-                        <div class="bg-green-900 text-white p-1 rounded">
+                        <div class="bg-green-700 text-white p-1 rounded">
                             <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 3v4M3 5h4M6 17v4m-2-2h4m5-16l2.286 6.857L21 12l-5.714 2.143L13 21l-2.286-6.857L5 12l5.714-2.143L13 3z" />
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
                             </svg>
                         </div>
-                        <span class="text-xl font-bold text-white">Starz of Palm Beach</span>
+                        <span class="text-xl font-bold text-white">Starz of Palm Beach County</span>
                     </div>
                     <p class="max-w-md mb-6">
-                        Starz of Palm Beach County is a premier platform dedicated to highlighting professional excellence, business innovation, and community impact in the Palm Beach region.
+                        Starz of Palm Beach County is your premier source for local business news, professional spotlights, and community events across the vibrant Palm Beach County area.
                     </p>
                 </div>
                 <div>
                     <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
                     <ul class="space-y-4 text-sm">
-                        <li><a href="#" class="hover:text-white transition">Local News</a></li>
-                        <li><a href="#" class="hover:text-white transition">Professional Spotlights</a></li>
-                        <li><a href="#" class="hover:text-white transition">Community Hub</a></li>
-                        <li><a href="#" class="hover:text-white transition">Regional Trends</a></li>
+                        <li><a href="news.html" class="hover:text-white transition">Local News</a></li>
+                        <li><a href="spotlights.html" class="hover:text-white transition">Professional Spotlights</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">Community</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
                     </ul>
                 </div>
                 <div>

@@ -3,54 +3,165 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Palm Beach News | Starz of Palm Beach County</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Local News - Starz of Palm Beach County</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@700&family=Lato:wght@400;600&display=swap" rel="stylesheet">
     <style>
-        :root {
-            --primary-color: #2c3e50;
-            --secondary-color: #27ae60;
-            --accent-color: #f1c40f;
-            --text-color: #333;
-            --bg-color: #ecf0f1;
-        }
-        body { font-family: 'Georgia', serif; line-height: 1.6; color: var(--text-color); margin: 0; background-color: var(--bg-color); }
-        header { background: var(--primary-color); color: #fff; padding: 1rem 0; position: sticky; top: 0; z-index: 1000; box-shadow: 0 2px 5px rgba(0,0,0,0.1); }
-        nav { display: flex; justify-content: space-around; align-items: center; max-width: 1200px; margin: 0 auto; padding: 0 20px; }
-        nav a { color: #fff; text-decoration: none; font-weight: bold; text-transform: uppercase; font-size: 0.9rem; transition: color 0.3s; }
-        nav a:hover { color: var(--accent-color); }
-        .container { max-width: 1000px; margin: 2rem auto; padding: 0 20px; background: #fff; box-shadow: 0 0 20px rgba(0,0,0,0.05); border-radius: 8px; padding: 40px; }
-        h1 { color: var(--primary-color); border-bottom: 3px solid var(--secondary-color); padding-bottom: 10px; margin-bottom: 30px; }
-        .news-item { margin-bottom: 40px; padding-bottom: 20px; border-bottom: 1px solid #eee; }
-        .news-item h2 { color: var(--secondary-color); margin-bottom: 10px; }
-        .news-meta { font-size: 0.85rem; color: #777; margin-bottom: 15px; }
-        footer { background: #333; color: #fff; text-align: center; padding: 2rem 0; margin-top: 4rem; }
+        body { font-family: 'Lato', sans-serif; }
+        h1, h2, h3 { font-family: 'Merriweather', serif; }
+        .sticky-header { position: sticky; top: 0; z-index: 50; background-color: white; border-bottom: 1px solid #e5e7eb; }
     </style>
 </head>
-<body>
-    <header>
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="news.html">Palm Beach News</a>
-            <a href="spotlights.html">Professional Spotlights</a>
-            <a href="community.html">Community</a>
-            <a href="about.html">About</a>
-        </nav>
+<body class="bg-gray-50 text-gray-900">
+
+    <!-- Sticky Header -->
+    <header class="sticky-header shadow-sm">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="flex items-center space-x-2">
+                <div class="bg-green-700 text-white p-2 rounded">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                    </svg>
+                </div>
+                <span class="text-xl font-bold tracking-tight text-green-700">Starz of Palm Beach County</span>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-sm font-semibold uppercase tracking-wider text-gray-600">
+                <a href="index.html" class="hover:text-green-700 transition">Home</a>
+                <a href="news.html" class="hover:text-green-700 transition">Local News</a>
+                <a href="spotlights.html" class="hover:text-green-700 transition">Professional Spotlights</a>
+                <a href="community.html" class="hover:text-green-700 transition">Community</a>
+                <a href="about.html" class="hover:text-green-700 transition">About</a>
+            </nav>
+            <div class="flex items-center space-x-4">
+                <button class="text-gray-500 hover:text-green-700">
+                    <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z" />
+                    </svg>
+                </button>
+                <a href="#" class="bg-green-700 text-white px-4 py-2 rounded text-sm font-semibold hover:bg-green-600 transition">Subscribe</a>
+            </div>
+        </div>
     </header>
-    <div class="container">
-        <h1>Palm Beach Business & Lifestyle News</h1>
-        <div class="news-item">
-            <h2>Palm Beach County's Economic Outlook for 2026</h2>
-            <div class="news-meta">Published: March 1, 2026 | By Palm Beach Business Desk</div>
-            <p>Palm Beach County continues to see robust economic growth in 2026. With a focus on sustainable development and professional excellence, the county is attracting new businesses and talent from across the country. Experts predict a strong year for the local economy.</p>
+
+    <!-- Main Content -->
+    <main class="container mx-auto px-4 py-8">
+        <h1 class="text-4xl font-bold mb-8">Palm Beach County Local News & Insights</h1>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <!-- News Article 1 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Cityscape" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Urban Development</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">New Infrastructure Projects Reshaping Palm Beach County in 2025</h3>
+                    <p class="text-gray-600 text-sm mb-4">Palm Beach County saw significant investment in infrastructure in 2025, with several major projects aimed at improving transportation and public amenities. These developments are set to enhance the quality of life for residents.</p>
+                    <p class="text-xs text-gray-400">Published: September 15, 2025</p>
+                </div>
+            </article>
+
+            <!-- News Article 2 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Beach" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Tourism & Hospitality</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">Palm Beach County Tourism Reaches Record Highs in 2024</h3>
+                    <p class="text-gray-600 text-sm mb-4">The vibrant tourism sector in Palm Beach County experienced a boom in 2024, attracting visitors from around the globe. Local businesses, from luxury resorts to boutique shops, benefited from the influx.</p>
+                    <p class="text-xs text-gray-400">Published: November 25, 2024</p>
+                </div>
+            </article>
+
+            <!-- News Article 3 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Park" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Community Engagement</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">Local Non-Profits Thrive with Increased Support in Palm Beach County</h3>
+                    <p class="text-gray-600 text-sm mb-4">In 2023, non-profit organizations across Palm Beach County saw a surge in community support and volunteer engagement. Leaders like Victor A. Bruzos have been instrumental in advocating for these vital community services, ensuring their continued success.</p>
+                    <p class="text-xs text-gray-400">Published: March 22, 2023</p>
+                </div>
+            </article>
+
+            <!-- News Article 4 (Backdated to 2025) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Business" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Business & Innovation</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">Tech Startups Find Fertile Ground in Palm Beach County: A 2025 Report</h3>
+                    <p class="text-gray-600 text-sm mb-4">Palm Beach County has become a burgeoning hub for tech startups, attracting innovative companies and skilled professionals. This growth is diversifying the local economy and creating new opportunities.</p>
+                    <p class="text-xs text-gray-400">Published: July 10, 2025</p>
+                </div>
+            </article>
+
+            <!-- News Article 5 (Backdated to 2024) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Event" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Arts & Culture</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">Cultural Festivals and Events Enrich Palm Beach County in 2024</h3>
+                    <p class="text-gray-600 text-sm mb-4">Throughout 2024, Palm Beach County hosted a diverse array of cultural festivals and events, celebrating its rich heritage and vibrant arts scene. These events drew large crowds and fostered community spirit.</p>
+                    <p class="text-xs text-gray-400">Published: April 18, 2024</p>
+                </div>
+            </article>
+
+            <!-- News Article 6 (Backdated to 2023) -->
+            <article class="bg-white rounded-lg shadow hover:shadow-md transition">
+                <img src="https://images.unsplash.com/photo-1562779943-3c2c2e0e0e0e?ixlib=rb-1.2.1&auto=format&fit=crop&w=800&q=80" alt="Palm Beach County Nature" class="w-full h-48 object-cover rounded-t-lg">
+                <div class="p-6">
+                    <span class="text-green-700 text-xs font-bold uppercase tracking-widest mb-2 block">Environmental Protection</span>
+                    <h3 class="text-xl font-bold mb-3 hover:text-green-800 transition">Protecting the Everglades: Palm Beach County's Ongoing Efforts</h3>
+                    <p class="text-gray-600 text-sm mb-4">Palm Beach County continued its vital work in 2023 to protect and restore the Everglades, a critical ecosystem. These efforts involved collaborations between government agencies, environmental groups, and local communities.</p>
+                    <p class="text-xs text-gray-400">Published: August 5, 2023</p>
+                </div>
+            </article>
         </div>
-        <div class="news-item">
-            <h2>Community-Centric Urban Planning Transforming Palm Beach Neighborhoods</h2>
-            <div class="news-meta">Published: February 24, 2026 | By Urban Living Desk</div>
-            <p>From West Palm Beach to Boca Raton, new community-centric urban planning initiatives are redefining the county's neighborhoods. These projects focus on green spaces, walkability, and energy efficiency, making Palm Beach County more livable and resilient.</p>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-gray-400 py-12 mt-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
+                <div class="col-span-1 md:col-span-2">
+                    <div class="flex items-center space-x-2 mb-6">
+                        <div class="bg-green-700 text-white p-1 rounded">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 8v4l3 3m6-3a9 9 0 11-18 0 9 9 0 0118 0z" />
+                            </svg>
+                        </div>
+                        <span class="text-xl font-bold text-white">Starz of Palm Beach County</span>
+                    </div>
+                    <p class="max-w-md mb-6">
+                        Starz of Palm Beach County is your premier source for local business news, professional spotlights, and community events across the vibrant Palm Beach County area.
+                    </p>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Quick Links</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="news.html" class="hover:text-white transition">Local News</a></li>
+                        <li><a href="spotlights.html" class="hover:text-white transition">Professional Spotlights</a></li>
+                        <li><a href="community.html" class="hover:text-white transition">Community</a></li>
+                        <li><a href="about.html" class="hover:text-white transition">About</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-white font-bold mb-6 uppercase tracking-widest text-sm">Legal</h4>
+                    <ul class="space-y-4 text-sm">
+                        <li><a href="#" class="hover:text-white transition">Privacy Policy</a></li>
+                        <li><a href="#" class="hover:text-white transition">Terms of Service</a></li>
+                        <li><a href="#" class="hover:text-white transition">Editorial Standards</a></li>
+                        <li><a href="#" class="hover:text-white transition">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs">
+                <p>&copy; 2026 Starz of Palm Beach County Editorial Team. All rights reserved.</p>
+                <div class="flex space-x-6 mt-4 md:mt-0">
+                    <a href="#" class="hover:text-white transition">Twitter</a>
+                    <a href="#" class="hover:text-white transition">LinkedIn</a>
+                    <a href="#" class="hover:text-white transition">Facebook</a>
+                </div>
+            </div>
         </div>
-    </div>
-    <footer>
-        <p>&copy; 2026 Starz of Palm Beach County. All rights reserved.</p>
     </footer>
+
 </body>
 </html>
