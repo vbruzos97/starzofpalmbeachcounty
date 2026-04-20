@@ -1,19 +1,5 @@
 User-agent: *
 Allow: /
-Disallow: /admin/
-Disallow: /private/
-Disallow: /temp/
-
-Sitemap: /sitemap.xml
-
-# Crawl delay to prevent server overload
-Crawl-delay: 1
-
-# Allow Google, Bing, and other major search engines
+Sitemap: https://starzofpalmbeachcounty.com/sitemap.xml
 User-agent: Googlebot
 Allow: /
-Crawl-delay: 0
-
-User-agent: Bingbot
-Allow: /
-Crawl-delay: 0
